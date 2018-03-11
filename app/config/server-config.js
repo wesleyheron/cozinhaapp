@@ -14,6 +14,6 @@ const config = {
 }
 
 module.exports = function(mode){
-    return config[mode || process.argv[2] || 'local'] || config.production;
+    return config[mode || process.argv[2] || 'production'] || config.production;
 }
 
